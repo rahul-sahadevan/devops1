@@ -23,6 +23,10 @@ app.get("/",(req,res)=>{
     return res.send("Server is UP and running")
 })
 
+app.get("/check-user",(req,res)=>{
+    return res.send("checking the user")
+})
+
 // add user to DB
 app.post("/adduser",async(req,res)=>{
     const {username,email,password} = req.body
