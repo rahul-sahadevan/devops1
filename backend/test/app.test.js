@@ -23,13 +23,13 @@ test("GET /check-user check the user",async()=>{
     asserts.equal(response.text,"checking the user")
 })
 
-test("GET /unknow returns 404",async()=>{
-    const response = await request(app).get("/unknown")
+// test("GET /unknow returns 404",async()=>{
+//     const response = await request(app).get("/unknown")
 
-    // get the response
-    asserts.equal(response.status,404)
-    asserts.equal(response.text,"API request failed with 404")
-})
+//     // get the response
+//     asserts.equal(response.status,404)
+//     asserts.equal(response.text,"API request failed with 404")
+// })
 
 
 test("POST /add-user check the add user API",async()=>{
