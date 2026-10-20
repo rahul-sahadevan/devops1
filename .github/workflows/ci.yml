@@ -27,6 +27,10 @@ jobs:
       - name: Install backend dependencies
         run: npm ci
 
+      - name: Run backend test
+        run: npm test
+        
+
   frontend-check:
     runs-on: ubuntu-latest
 
