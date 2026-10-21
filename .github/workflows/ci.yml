@@ -4,10 +4,10 @@ name: Node.js CI
 on:
   push:
     branches:
-      - main
+      - master
       - check_user
   pull_request:
-    branches: [main]
+    branches: [master]
 
 jobs:
   backend-check:
@@ -91,7 +91,7 @@ jobs:
       - backend-check
       - frontend-check
 
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
 
     permissions:
       contents: read
